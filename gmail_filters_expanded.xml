@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  Gmail Filters — Expanded Import File
+  ======================================
+  Import this file into Gmail via:
+    Settings (gear icon) > See all settings > Filters and Blocked Addresses > Import filters
+
+  Author : Angel Evans
+  Version: 1.0.0
+  Date   : 2026-02-13
+
+  NOTE: Gmail's native filter system does not support nested/hierarchical labels
+  in the import XML. The label names below use the "/" separator which Gmail
+  interprets as nested labels (e.g., "CONTACTS/Caresse-Lopez" creates
+  "Caresse-Lopez" under "CONTACTS"). Ensure labels are created FIRST using
+  the gmail_organizer.py script or the gmail_label_creator.gs Apps Script.
+-->
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>Gmail Organizer — Mail Filters</title>
+  <id>tag:mail.google.com,2026:filters:angelreporters</id>
+  <updated>2026-02-13T00:00:00Z</updated>
+  <author>
+    <name>Angel Evans</name>
+    <email>angelreporters@gmail.com</email>
+  </author>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- SELF-EMAILS -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Self-Emails</title>
+    <apps:property name='from' value='angelreporters@gmail.com'/>
+    <apps:property name='to' value='angelreporters@gmail.com'/>
+    <apps:property name='label' value='TIMELINE-EVIDENCE/Communications-Sent/Self-Emails'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- SENT TO CONTACTS (from angelreporters) -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Sent to Contacts</title>
+    <apps:property name='from' value='angelreporters@gmail.com'/>
+    <apps:property name='label' value='TIMELINE-EVIDENCE/Communications-Sent/To-Contacts'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- CARESSE LOPEZ -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Caresse Lopez — From</title>
+    <apps:property name='from' value='lopez.caresse@gmail.com'/>
+    <apps:property name='label' value='CONTACTS/Caresse-Lopez'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+  <entry>
+    <category term='filter'/>
+    <title>Caresse Lopez — From (Music)</title>
+    <apps:property name='from' value='lopez.caresse@gmail.com'/>
+    <apps:property name='label' value='MUSIC/Collaborations/Caresse-Rae-Edna'/>
+  </entry>
+  <entry>
+    <category term='filter'/>
+    <title>Caresse Lopez — To</title>
+    <apps:property name='to' value='lopez.caresse@gmail.com'/>
+    <apps:property name='label' value='CONTACTS/Caresse-Lopez'/>
+  </entry>
+  <entry>
+    <category term='filter'/>
+    <title>Caresse Lopez — To (Music)</title>
+    <apps:property name='to' value='lopez.caresse@gmail.com'/>
+    <apps:property name='label' value='MUSIC/Collaborations/Caresse-Rae-Edna'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- GITHUB -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>GitHub Notifications</title>
+    <apps:property name='from' value='@github.com'/>
+    <apps:property name='label' value='PROJECTS/GitHub-Dev'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- SSRN -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>SSRN — From</title>
+    <apps:property name='from' value='ssrn'/>
+    <apps:property name='label' value='PROJECTS/SSRN-Academic'/>
+  </entry>
+  <entry>
+    <category term='filter'/>
+    <title>SSRN — Subject</title>
+    <apps:property name='subject' value='SSRN'/>
+    <apps:property name='label' value='PROJECTS/SSRN-Academic'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- JOB SEARCH — INDEED -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Indeed Job Alerts</title>
+    <apps:property name='from' value='indeed'/>
+    <apps:property name='subject' value='job'/>
+    <apps:property name='label' value='JOB-SEARCH/Alerts/Indeed'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- JOB SEARCH — LINKEDIN -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>LinkedIn Job Alerts</title>
+    <apps:property name='from' value='linkedin'/>
+    <apps:property name='subject' value='job'/>
+    <apps:property name='label' value='JOB-SEARCH/Alerts/LinkedIn'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- AMAZON ORDERS -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Amazon Orders</title>
+    <apps:property name='from' value='amazon'/>
+    <apps:property name='subject' value='order OR shipment'/>
+    <apps:property name='label' value='ORDERS-RECEIPTS/Amazon'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- GOOGLE PLAY RECEIPTS -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Google Play Receipts</title>
+    <apps:property name='from' value='google'/>
+    <apps:property name='subject' value='receipt OR purchase'/>
+    <apps:property name='label' value='ORDERS-RECEIPTS/Google-Play'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- CHASE / BANKING -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Chase Banking</title>
+    <apps:property name='from' value='chase'/>
+    <apps:property name='label' value='TIMELINE-EVIDENCE/Financial-Transactions/Banking-Chase'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+  <entry>
+    <category term='filter'/>
+    <title>Bank General</title>
+    <apps:property name='from' value='bank'/>
+    <apps:property name='label' value='TIMELINE-EVIDENCE/Financial-Transactions/Banking-Chase'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- ROBINHOOD -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Robinhood Investments</title>
+    <apps:property name='from' value='robinhood'/>
+    <apps:property name='label' value='TIMELINE-EVIDENCE/Financial-Transactions/Robinhood-Investments'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- UC HEALTH -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>UC Health</title>
+    <apps:property name='from' value='uchealth'/>
+    <apps:property name='label' value='TIMELINE-EVIDENCE/Medical/UC-Health'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- GOVERNMENT — IRS -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>IRS</title>
+    <apps:property name='subject' value='IRS'/>
+    <apps:property name='label' value='TIMELINE-EVIDENCE/Government/IRS'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- GOVERNMENT — SSA -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>SSA / Social Security</title>
+    <apps:property name='subject' value='SSA OR Social Security'/>
+    <apps:property name='label' value='TIMELINE-EVIDENCE/Government/SSA'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- GOVERNMENT — MEDICAID / MEDICARE -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Medicaid / Medicare</title>
+    <apps:property name='subject' value='medicaid OR medicare'/>
+    <apps:property name='label' value='TIMELINE-EVIDENCE/Government/Medicaid-Medicare'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- REDFIN -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Redfin Property</title>
+    <apps:property name='from' value='redfin'/>
+    <apps:property name='label' value='TIMELINE-EVIDENCE/Location-Activity/Redfin-Property'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- HQS INSPECTIONS -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>HQS Inspections</title>
+    <apps:property name='subject' value='HQS OR inspection'/>
+    <apps:property name='label' value='TIMELINE-EVIDENCE/Housing/HQS-Inspections'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- SOUNDCLOUD -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>SoundCloud</title>
+    <apps:property name='from' value='soundcloud'/>
+    <apps:property name='label' value='MUSIC/Platforms/SoundCloud'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- SPOTIFY -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Spotify</title>
+    <apps:property name='from' value='spotify'/>
+    <apps:property name='label' value='MUSIC/Platforms/Spotify'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- CHURCH ONE20 -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Church One20</title>
+    <apps:property name='from' value='one20 OR dusty'/>
+    <apps:property name='label' value='CONTACTS/Church-One20'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- SOCIAL MEDIA — TIKTOK -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>TikTok</title>
+    <apps:property name='from' value='tiktok'/>
+    <apps:property name='label' value='SOCIAL-MEDIA/TikTok'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- SOCIAL MEDIA — LINKEDIN (general) -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>LinkedIn General</title>
+    <apps:property name='from' value='linkedin'/>
+    <apps:property name='label' value='SOCIAL-MEDIA/LinkedIn'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- SOCIAL MEDIA — REDDIT -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Reddit</title>
+    <apps:property name='from' value='reddit'/>
+    <apps:property name='label' value='SOCIAL-MEDIA/Reddit'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- SOCIAL MEDIA — NEXTDOOR -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Nextdoor</title>
+    <apps:property name='from' value='nextdoor'/>
+    <apps:property name='label' value='SOCIAL-MEDIA/Nextdoor'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- EBAY -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>eBay</title>
+    <apps:property name='from' value='ebay'/>
+    <apps:property name='label' value='ORDERS-RECEIPTS/eBay'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- ETSY -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Etsy</title>
+    <apps:property name='from' value='etsy'/>
+    <apps:property name='label' value='ORDERS-RECEIPTS/Etsy'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- LEGAL / COURT -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Legal / Court</title>
+    <apps:property name='subject' value='court OR attorney OR legal OR subpoena'/>
+    <apps:property name='label' value='TIMELINE-EVIDENCE/Legal-Court'/>
+    <apps:property name='shouldNeverSpam' value='true'/>
+    <apps:property name='shouldStar' value='true'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- API KEYS / CREDENTIALS -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>API Keys / Credentials</title>
+    <apps:property name='from' value='angelreporters'/>
+    <apps:property name='subject' value='API OR token OR key'/>
+    <apps:property name='label' value='API-KEYS-CREDENTIALS/API-Keys'/>
+    <apps:property name='shouldStar' value='true'/>
+  </entry>
+
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <!-- NEWSLETTERS (catch-all via List-Unsubscribe) -->
+  <!-- Note: Gmail filters cannot detect List-Unsubscribe headers directly.
+       This filter uses the "has the words" field with "unsubscribe" as a
+       best-effort approximation. -->
+  <!-- ════════════════════════════════════════════════════════════════════ -->
+  <entry>
+    <category term='filter'/>
+    <title>Newsletters (catch-all)</title>
+    <apps:property name='hasTheWord' value='unsubscribe'/>
+    <apps:property name='label' value='NEWSLETTERS'/>
+  </entry>
+
+</feed>
