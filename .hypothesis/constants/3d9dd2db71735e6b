@@ -1,0 +1,4 @@
+# file: /home/ubuntu/gmail_organizer_v2/gmail_organizer/operations.py
+# hypothesis_version: 6.151.6
+
+[0.0, 1.0, 10.0, 12.0, 100, 429, 500, 503, 'addLabelIds', 'format', 'gmail', 'id', 'labelIds', 'labelListVisibility', 'labelShow', 'labels', 'maxResults', 'me', 'metadata', 'metadataHeaders', 'name', 'pageToken', 'removeLabelIds', 'resp', 'show', 'userId', 'v1']

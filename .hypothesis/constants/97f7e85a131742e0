@@ -1,0 +1,4 @@
+# file: /home/ubuntu/gmail_organizer_v2/gmail_organizer/migrator.py
+# hypothesis_version: 6.151.6
+
+['CATEGORY_', 'CHAT', 'DRAFT', 'IMPORTANT', 'INBOX', 'SENT', 'SPAM', 'STARRED', 'TRASH', 'UNREAD', 'errors', 'id', 'labels_migrated', 'messages', 'messagesTotal', 'messages_moved', 'name', 'nextPageToken', 'system', 'type']

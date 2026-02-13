@@ -1,0 +1,4 @@
+# file: /home/ubuntu/gmail_organizer_v2/gmail_organizer/utils.py
+# hypothesis_version: 6.151.6
+
+['\x1b[0m', '\x1b[1m', '\x1b[41m', '\x1b[42m', '\x1b[43m', '\x1b[44m', '\x1b[45m', '\x1b[90m', '\x1b[91m', '\x1b[92m', '\x1b[93m', '\x1b[94m', '\x1b[95m', '\x1b[96m', '\x1b[97m', '%H:%M:%S', '%Y-%m-%d %H:%M:%S', 'a', 'gmail_organizer', 'gmail_organizer.log', 'name', 'utf-8', 'value']

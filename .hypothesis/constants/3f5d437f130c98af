@@ -1,0 +1,4 @@
+# file: /home/ubuntu/gmail_organizer_v2/gmail_organizer/categorizer.py
+# hypothesis_version: 6.151.6
+
+['FLAGGED-REVIEW', 'From', 'List-Unsubscribe', 'Subject', 'To', '_from_re', '_subject_re', '_to_re', 'has_unsubscribe', 'labels']

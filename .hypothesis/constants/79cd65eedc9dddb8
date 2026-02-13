@@ -1,0 +1,4 @@
+# file: /home/ubuntu/gmail_organizer_v2/gmail_organizer/auth.py
+# hypothesis_version: 6.151.6
+
+[384, '.gmail_organizer_key', 'client_id', 'client_secret', 'credentials.json', 'rb', 'refresh_token', 'scopes', 'token', 'token.pickle', 'token_uri', 'utf-8']
