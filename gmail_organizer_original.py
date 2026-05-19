@@ -251,7 +251,7 @@ MIGRATION_MAP = [
     (r"^ssrn",                            "PROJECTS/SSRN-Academic"),
     (r"^academ",                          "PROJECTS/SSRN-Academic"),
     (r"^github",                          "PROJECTS/GitHub-Dev"),
-    (r"^[A-Za-z0-9_.-]+[/\\][A-Za-z0-9_.-]+$",  "PROJECTS/GitHub-Dev"),
+    (r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",      "PROJECTS/GitHub-Dev"),
     (r"^dev$",                            "PROJECTS/GitHub-Dev"),
     (r"^development",                     "PROJECTS/GitHub-Dev"),
     (r"^coding",                          "PROJECTS/GitHub-Dev"),
