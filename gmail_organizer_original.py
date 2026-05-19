@@ -255,6 +255,7 @@ MIGRATION_MAP = [
     (r"^development",                     "PROJECTS/GitHub-Dev"),
     (r"^coding",                          "PROJECTS/GitHub-Dev"),
     (r"^code$",                           "PROJECTS/GitHub-Dev"),
+    (r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$",      "PROJECTS/GitHub-Dev"),
     (r"^yumyum",                          "PROJECTS/YumYumCode"),
     (r"^tiki",                            "PROJECTS/Tiki-Washbot"),
     (r"^neurooz",                         "PROJECTS/Neurooz"),
