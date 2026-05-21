@@ -1,6 +1,6 @@
 # Copilot Instructions
 
-Use `/home/runner/work/gmail-organizer/gmail-organizer/AGENTS.md` as the source of truth for repository instructions.
+Use `AGENTS.md` as the source of truth for repository instructions.
 
 ## S2M / Revvel auto-processing convention
 

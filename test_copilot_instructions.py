@@ -1,12 +1,13 @@
 import unittest
 from pathlib import Path
 
+COPILOT_INSTRUCTIONS_PATH = Path('.github/copilot-instructions.md')
+
 
 class TestCopilotInstructions(unittest.TestCase):
     def test_copilot_instructions_include_s2m_revvel_guidance(self):
-        instructions = Path('.github/copilot-instructions.md')
-        self.assertTrue(instructions.exists())
-        text = instructions.read_text(encoding='utf-8').lower()
+        self.assertTrue(COPILOT_INSTRUCTIONS_PATH.exists())
+        text = COPILOT_INSTRUCTIONS_PATH.read_text(encoding='utf-8').lower()
         self.assertIn('s2m', text)
         self.assertIn('revvel', text)
 
