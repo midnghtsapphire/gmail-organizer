@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 
-COPILOT_INSTRUCTIONS_PATH = Path('.github/copilot-instructions.md')
+COPILOT_INSTRUCTIONS_PATH = Path(__file__).resolve().parent / '.github' / 'copilot-instructions.md'
 
 
 class TestCopilotInstructions(unittest.TestCase):
