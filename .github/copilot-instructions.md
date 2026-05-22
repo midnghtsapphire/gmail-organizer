@@ -2,6 +2,8 @@
 
 Use `AGENTS.md` as the source of truth for repository instructions.
 
+`AGENTS.md` must remain a standalone file for this repository. Do not replace it with, or symlink it to, `.github/copilot-instructions.md`; this file is supplemental and must stay consistent with `AGENTS.md`.
+
 ## S2M / Revvel auto-processing convention
 
 When an issue or WR title/body contains `s2m` (case-insensitive), treat it as a ship-to-market request and run the work through revvel-standards in one iteration.
