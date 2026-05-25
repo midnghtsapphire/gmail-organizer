@@ -16,6 +16,7 @@ class TestCopilotInstructions(unittest.TestCase):
         self.assertIn('go_to_market.md', text)
         self.assertIn('brand_guidelines.md', text)
         self.assertIn('security.md', text)
+        self.assertIn('extend it instead of replacing it', text)
 
 
 if __name__ == '__main__':

@@ -16,3 +16,6 @@ Minimum revvel-standards output for this repository:
 - BRAND_GUIDELINES.md
 - SECURITY.md
 - baseline validation scripts/commands documented and run where applicable
+- if a website already exists in the repository (marketing site, docs site, or app UI), extend it instead of replacing it
+  - extension examples: add new pages/sections/components within the existing structure
+  - replacement to avoid: deleting the existing `index.html` or entire website tree to swap in a new one
