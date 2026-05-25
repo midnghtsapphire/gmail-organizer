@@ -28,6 +28,17 @@ class TestRevvelStandardsArtifacts(unittest.TestCase):
         self.assertIn("artifacts", text)
         self.assertIn("research", text)
 
+
+    def test_go_to_market_contains_research_engine_content(self):
+        go_to_market = ROOT / "GO_TO_MARKET.md"
+        self.assertTrue(go_to_market.exists())
+        text = go_to_market.read_text(encoding="utf-8").lower()
+        self.assertIn("research engine outputs", text)
+        self.assertIn("research inputs", text)
+        self.assertIn("suggestions", text)
+        self.assertIn("assets inventory", text)
+        self.assertIn("artifacts inventory", text)
+
     def test_package_baseline_scripts_defined(self):
         package = ROOT / "package.json"
         self.assertTrue(package.exists())
