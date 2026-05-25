@@ -9,6 +9,14 @@
 
 Automated Email Labeling, Sorting & Migration System for Gmail. This script creates over 80 hierarchical labels, automatically sorts every email in your mailbox, and migrates emails from existing labels into the new, organized hierarchy.
 
+## What this repository does now
+
+This repository provides:
+- A production-oriented Gmail label organizer script (`gmail_organizer.py`)
+- Supporting migration and mapping artifacts
+- A ship-to-market website-in-test surface at `website/index.html`
+- Revvel-standard operational docs for deployment, security, brand, and go-to-market packaging
+
 ## Features
 
 *   **Automated Label Creation**: Generates a comprehensive, multi-level label hierarchy.
@@ -54,6 +62,20 @@ python3 gmail_organizer.py --create-labels
 ```
 
 This will open a browser window for you to authorize the application. After authorization, the script will create the complete label hierarchy in your Gmail account.
+
+## Baseline validation commands
+
+```bash
+npm test
+npm run build
+```
+
+`npm test` runs focused revvel baseline checks, and `npm run build` validates Python source compilation.
+
+## Website in Test
+
+- Local artifact: `website/index.html`
+- Vercel deployment target: static deployment from the `website/` directory (see `DEPLOYMENT_GUIDE.md`)
 
 ## Code Review
 
