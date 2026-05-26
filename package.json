@@ -1,0 +1,9 @@
+{
+  "name": "gmail-organizer-revvel-baseline",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "test": "bash scripts/test-baseline.sh",
+    "build": "bash scripts/build-baseline.sh"
+  }
+}
